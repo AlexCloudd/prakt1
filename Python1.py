@@ -1,7 +1,6 @@
 import random
 import time
 
-# Глобальные переменные
 force = 0
 month_number = 0
 inventory = []
