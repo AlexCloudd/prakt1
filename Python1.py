@@ -91,7 +91,6 @@ def monstor_two():
         exit()
 
 def final_challenge():
-    """Последнее испытание в третьем месяце"""
     global force
     if force < 85:
         print("У вас недостаточно силы для финального испытания. Вы проиграли!")
@@ -117,7 +116,6 @@ def final_challenge():
         exit()
 
 def month_template(month_number):
-    """Шаблон месяца тренировок"""
     global force, stats
     print(mounth[month_number]["skript"])
     while True:
