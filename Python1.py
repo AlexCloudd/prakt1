@@ -79,7 +79,7 @@ def monstor_two():
     global force, stats
     fight = input("Вам бросили вызов. Напишите \"да\" для начала битвы: ").lower()
     if fight == "да":
-        if force >= 50:
+        if force >= 55:
             print("Вы выиграли битву и можете тренироваться дальше.")
             stats["победы"] += 1
         else:
@@ -131,11 +131,11 @@ def month_template(month_number):
             gain_selection = input("Выберите предмет из инвентаря для улучшения (или 'нет' для пропуска): ").lower()
             if gain_selection in inventory:
                 if gain_selection == "магнезия":
-                    force = int((force * 0.2) + force)
-                elif gain_selection == "лямки":
                     force = int((force * 0.1) + force)
+                elif gain_selection == "лямки":
+                    force = int((force * 0.05) + force)
                 elif gain_selection == "аммиак":
-                    force = int((force * 0.25) + force)
+                    force = int((force * 0.15) + force)
             print("Вы начинаете тренировку!")
             exercises = mounth[month_number]["exercise"]
             exercise_choice = input(f"Выберите упражнение: {', '.join(exercises)}\n").lower()
