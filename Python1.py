@@ -25,6 +25,7 @@ mounth = {
     }
 }
 
+one_step = input("Добро пожаловать в игру, напишите \"Да\" для продолжения: ").lower()
 
 def choose_character():
     global character, force
@@ -149,7 +150,7 @@ def month_template(month_number):
             print("Вы вышли из программы.")
             exit()
 
-if __name__ == "__main__":
+if one_step == "да":
     choose_character()
     month_template(1)
     monstor_two()
